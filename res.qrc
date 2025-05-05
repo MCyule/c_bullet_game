@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/">
+        <file>loops/burning_loop_1.png</file>
+        <file>loops/burning_loop_2.png</file>
+        <file>loops/burning_loop_3.png</file>
+        <file>loops/burning_loop_4.png</file>
+        <file>loops/burning_loop_5.png</file>
+        <file alias="rect">loops/rect.png</file>
+        <file alias="eyes">loops/eyes.png</file>
+        <file alias="smile">loops/smile.png</file>
+        <file alias="bullet">loops/bullet.png</file>
+        <file alias="mouse">loops/mouse.png</file>
+        <file alias="shark">loops/shark.png</file>
+        <file alias="dotenemy">loops/dotenemy.png</file>
+        <file alias="card1">loops/card/1ofclubs.png</file>
+        <file alias="card2">loops/card/2ofclubs.png</file>
+        <file alias="card3">loops/card/3ofclubs.png</file>
+        <file alias="card4">loops/card/4ofclubs.png</file>
+        <file alias="card5">loops/card/5ofclubs.png</file>
+        <file alias="card6">loops/card/6ofclubs.png</file>
+        <file alias="card7">loops/card/7ofclubs.png</file>
+        <file alias="card8">loops/card/8ofclubs.png</file>
+        <file alias="card9">loops/card/9ofclubs.png</file>
+        <file alias="card10">loops/card/10ofclubs.png</file>
+        <file alias="card11">loops/card/11ofclubs.png</file>
+        <file alias="card12">loops/card/12ofclubs.png</file>
+        <file alias="card13">loops/card/13ofclubs.png</file>
+        <file alias="arrow_bullet">loops/arraw_bullet.png</file>
+        <file alias="little_bullet">loops/little_bullet.png</file>
+        <file alias="circle_bullet">loops/circle_bullet.png</file>
+        <file alias="hurt_bullet">loops/hurt_bullet.png</file>
+    </qresource>
+</RCC>

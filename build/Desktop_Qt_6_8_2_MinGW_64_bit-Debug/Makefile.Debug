@@ -227,10 +227,12 @@ debug/qrc_res.cpp: ../../res.qrc \
 		../../loops/circle_bullet.png \
 		../../loops/rect.png \
 		../../loops/card/9ofclubs.png \
+		../../loops/auto_bullet1.png \
 		../../loops/shark.png \
 		../../loops/smile.png \
 		../../loops/hurt_bullet.png \
 		../../loops/card/1ofclubs.png \
+		../../loops/auto_bullet2.png \
 		../../loops/bullet.png \
 		../../loops/card/12ofclubs.png \
 		../../loops/card/6ofclubs.png \

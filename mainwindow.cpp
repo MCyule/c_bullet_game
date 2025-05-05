@@ -95,11 +95,11 @@ void MainWindow::spawn(){
 }
 
 void MainWindow::spawnCard(){
-    if(cardIndex >= 13){
-        cardIndex = 0;
+    if(cardIndex >= 12){
+        return;
     }
     Card *card1 = new Card();
-    card1->id = cardIndex;
+    card1->setId(cardIndex);
     card1->position = QVector2D(-100,150);
     card1->motion->direction = QVector2D(1,0);
     card1->motion->speed = 200;
@@ -108,7 +108,7 @@ void MainWindow::spawnCard(){
     freeList->append(new FreeTimer(card1,16000));
     cardIndex++;
     card1 = new Card();
-    card1->id = cardIndex;
+    card1->setId(cardIndex);
     card1->position = QVector2D(1600,800);
     card1->motion->direction = QVector2D(-1,0);
     card1->motion->speed = 200;

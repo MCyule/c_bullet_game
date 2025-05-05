@@ -15,7 +15,9 @@ Player::Player(GameObject *parent)
     ,spell(new NormalSpell())
     ,hurtSpell(new NormalSpell())
     ,autoSpell1(new NormalSpell())
+    ,autoTimer1(new QTimer())
     ,autoSpell2(new NormalSpell())
+    ,autoTimer2(new QTimer())
 {
     consumeTimer->setInterval(100);
     connect(consumeTimer,&QTimer::timeout,this,[this](){
@@ -41,7 +43,22 @@ Player::Player(GameObject *parent)
         }
         hurtTimer->start();
     });
+
+
+    autoTimer1->setInterval(1000);
+    connect(autoTimer1,&QTimer::timeout,this,[this](){
+        autoSpell1->release(Globals::instance()->generateRandomUnitVector(),QVector2D(position.x(),position.y()));
+    });
+
+
+    autoTimer2->setInterval(1000);
+    connect(autoTimer2,&QTimer::timeout,this,[this](){
+        autoSpell2->release(Globals::instance()->generateRandomUnitVector(),QVector2D(position.x() + 300,position.y()));
+    });
+
+
     MotionComponent *motionComponent= new MotionComponent();
+
 
     body->append(new QPixmap(":/rect"),1,"rect");
     body->setScale(6);
@@ -101,7 +118,18 @@ Player::Player(GameObject *parent)
     hurtSpell->recover_angle *= 2;
 
 
+    config = new ProjectileConfig();
+    config->attackPower = 8;
+    autoSpell1->projectileConfig = config;
+    config->aniName = "auto1";
+    config->aniScale = 4;
 
+
+    config = new ProjectileConfig();
+    config->attackPower = 8;
+    autoSpell2->projectileConfig = config;
+    config->aniName = "auto2";
+    config->aniScale = 4;
 
 
     consumeTimer->start();
@@ -140,7 +168,7 @@ void Player::shoot(){
         return;
     }
     setMana(mana - spell->get_total_mana_consume());
-    spell->release(Globals::player_direction,QVector2D(Globals::centerPos.x(),Globals::centerPos.y()));
+    spell->release(Globals::player_direction,QVector2D(Globals::centerPos.x() + 20,Globals::centerPos.y() + 40));
     spell->wait_time = spell->get_total_cooldown_time();
 }
 

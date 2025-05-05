@@ -33,3 +33,36 @@ Card::Card(Enemy *parent)
         Globals::instance()->upgrade(id);
     });
 }
+
+
+void Card::setId(int _id){
+    id = _id;
+    int idd = Globals::instance()->cards[id];
+    if(idd == 0){
+        sprite->play("card1");
+    } else if(idd == 1){
+          sprite->play("card2");
+    }else if(idd  == 2){
+          sprite->play("card3");
+    }else if(idd == 3){
+        sprite->play("card4");
+    }else if(idd == 4){
+           sprite->play("card5");
+    }else if(idd == 5){
+           sprite->play("card6");
+    }else if(idd == 6){
+           sprite->play("card7");
+    }else if(idd == 7){
+           sprite->play("card8");
+    }else if(idd == 8){
+           sprite->play("card9");
+    }else if(idd == 9){
+             sprite->play("card10");
+    }else if(idd == 10){
+             sprite->play("card11");
+    }else if(idd == 11){
+                sprite->play("card12");
+    }
+}
+
+

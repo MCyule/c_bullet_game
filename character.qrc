@@ -1,52 +1,6 @@
 <RCC>
     <qresource prefix="/">
-        <file>loops/Top down character template by RgsDev/Character with pistol/idle/idle down1.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/idle/idle down2.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/idle/idle down3.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/idle/idle down4.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/idle/idle left1.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/idle/idle left2.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/idle/idle left3.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/idle/idle left4.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/idle/idle right1.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/idle/idle right2.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/idle/idle right3.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/idle/idle right4.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/idle/idle up1.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/idle/idle up2.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/idle/idle up3.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/idle/idle up4.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/walk/walk down1.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/walk/walk down2.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/walk/walk down3.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/walk/walk down4.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/walk/walk left1.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/walk/walk left2.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/walk/walk left3.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/walk/walk left4.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/walk/walk right1.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/walk/walk right2.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/walk/walk right3.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/walk/walk right4.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/walk/walk up1.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/walk/walk up2.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/walk/walk up3.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/walk/walk up4.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/attack/shoot down1.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/attack/shoot down2.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/attack/shoot down3.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/attack/shoot down4.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/attack/shoot left1.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/attack/shoot left2.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/attack/shoot left3.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/attack/shoot left4.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/attack/shoot right1.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/attack/shoot right2.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/attack/shoot right3.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/attack/shoot right4.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/attack/shoot up1.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/attack/shoot up2.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/attack/shoot up3.png</file>
-        <file>loops/Top down character template by RgsDev/Character with pistol/attack/shoot up4.png</file>
+        <file alias="auto_bullet1">loops/auto_bullet1.png</file>
+        <file alias="auto_bullet2">loops/auto_bullet2.png</file>
     </qresource>
 </RCC>

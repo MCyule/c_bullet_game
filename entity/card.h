@@ -11,7 +11,7 @@ class Card : public Enemy
 public:
     explicit Card(Enemy *parent = nullptr);
     AnimatedSpriteComponent *sprite;
-
+    void setId(int);
     int id = 0;
 
 signals:

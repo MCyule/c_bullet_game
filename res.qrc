@@ -1,10 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>loops/burning_loop_1.png</file>
-        <file>loops/burning_loop_2.png</file>
-        <file>loops/burning_loop_3.png</file>
-        <file>loops/burning_loop_4.png</file>
-        <file>loops/burning_loop_5.png</file>
         <file alias="rect">loops/rect.png</file>
         <file alias="eyes">loops/eyes.png</file>
         <file alias="smile">loops/smile.png</file>
@@ -29,5 +24,7 @@
         <file alias="little_bullet">loops/little_bullet.png</file>
         <file alias="circle_bullet">loops/circle_bullet.png</file>
         <file alias="hurt_bullet">loops/hurt_bullet.png</file>
+        <file alias="auto_bullet1">loops/auto_bullet1.png</file>
+        <file alias="auto_bullet2">loops/auto_bullet2.png</file>
     </qresource>
 </RCC>

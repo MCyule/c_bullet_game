@@ -26,7 +26,9 @@ public:
     NormalSpell *spell;
     NormalSpell *hurtSpell;
     NormalSpell *autoSpell1;
+    QTimer *autoTimer1;
     NormalSpell *autoSpell2;
+    QTimer *autoTimer2;
     int maxMana = 200;
     int mana=200;
     bool isShotting = false;

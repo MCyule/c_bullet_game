@@ -94,9 +94,10 @@ void Globals::nextLevel(){
 
 }
 void Globals::upgrade(int id){
+    id = cards[id];
     qDebug()<<"升级！！！！！！          "<<id;
     if(id==0){
-        player->spell->projectile_amount++;
+     player->spell->projectile_amount++;
         player->spell->mana_consume += 5;
     }else if(id == 1){//折射路径
         QVector<QVector2D> path;
@@ -163,7 +164,9 @@ void Globals::upgrade(int id){
         Globals::instance()->player->hasHurtSpell = true;
     }else if(id == 9){//碰撞伤害
         Globals::instance()->player->healthComponent->couldAttack = true;
-    }else if(id==10){
-
+    }else if(id==10){//自动1
+        Globals::instance()->player->autoTimer1->start();
+    }else if(id == 11){//自动2
+        Globals::instance()->player->autoTimer2->start();
     }
 }

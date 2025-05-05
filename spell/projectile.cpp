@@ -28,6 +28,8 @@ Projectile::Projectile(GameObject *parent)
     sprite->append(new QPixmap(":/little_bullet"),1,"little_bullet");
     sprite->append(new QPixmap(":/circle_bullet"),1,"circle_bullet");
     sprite->append(new QPixmap(":/hurt_bullet"),1,"hurt_bullet");
+    sprite->append(new QPixmap(":/auto_bullet1"),1,"auto1");
+    sprite->append(new QPixmap(":/auto_bullet2"),1,"auto2");
 
 
     addComponent(motion);

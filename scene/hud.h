@@ -20,9 +20,9 @@ public:
     float currentTime =0;
     int levelTime = 0;
     ~HUD();
-
+Ui::HUD *ui;
 private:
-    Ui::HUD *ui;
+
 };
 
 #endif // HUD_H

@@ -4,6 +4,7 @@
 #include "component/animatedspritecomponent.h"
 #include "component/healthcomponent.h"
 #include"gameobject.h"
+#include "qsoundeffect.h"
 #include "spell/normalspell.h"
 
 #include <QObject>
@@ -20,6 +21,9 @@ public:
     AnimatedSpriteComponent *smile;
     AnimatedSpriteComponent* eye;
     AnimatedSpriteComponent *body;
+    AnimatedSpriteComponent *spell1;
+    AnimatedSpriteComponent *spell2;
+    AnimatedSpriteComponent *chara;
     QTimer *consumeTimer;
     QTimer *hurtTimer;
     HealthComponent* healthComponent;
@@ -35,6 +39,7 @@ public:
     bool recoverHealth = false;
     bool hasInvinTime = false;
     bool hasHurtSpell = false;
+    QSoundEffect *music;
 signals:
     void manaChanged(int);
     void shooted(QVector2D);

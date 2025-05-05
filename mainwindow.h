@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "entity/dotenemy.h"
 #include "entity/enemy.h"
 #include"gameobject.h"
 #include"main/gameview.h"
@@ -46,6 +47,10 @@ public:
     void spawn();
     void spawnCard();
     int cardIndex = 0;
+    int enemyCounnt = 4;
+    void spawnBoss();
+    bool isBoss = false;
+    DotEnemy *boss;
     ~MainWindow();
 
 private:

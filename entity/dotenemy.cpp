@@ -8,13 +8,17 @@ DotEnemy::DotEnemy(Enemy *parent)
 
     motion->speed = 300;
 
-    AnimatedSpriteComponent *body = new AnimatedSpriteComponent();
-    body->append(new QPixmap(":/dotenemy"),4,"dotenemy");
-    body->setScale(4);
-    body->name = "rect_component";
-    body->play("dotenemy");
+    sprite = new AnimatedSpriteComponent();
+    sprite->append(new QPixmap(":/dotenemy"),4,"0");
+    for(int i=1;i<17;i++){
+        sprite->append(new QPixmap(":/" + QString::number(i)),1,QString::number(i));
+    }
+    sprite->append(new QPixmap(":/ene2"),1,"boss");
+    sprite->setScale(4);
+    sprite->name = "rect_component";
+    sprite->play("0");
 
-    addComponent(body);
+    addComponent(sprite);
 
     healthComponent->touchArea = new QVector2D(64,64);
     healthComponent->attackArea = new QVector2D(81,81);

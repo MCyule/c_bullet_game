@@ -22,8 +22,10 @@ void NormalSpell::release(QVector2D dir,QVector2D pos,int prepareTime){
 void NormalSpell::release_projectile(QVector2D dir,QVector2D pos ,int amount,int pre){
     qreal shoot_offset_angle = -((projectile_amount-1)*recover_angle)/2;
     int toward = dir.x() >= 0 ? 1 : -1;
-    NormalProjectile *projectile ;
+    NormalProjectile *projectile = nullptr ;
+
     for(int index =0;index<amount;index++){
+
         projectile = new NormalProjectile();
         projectile->preparedTime = pre;
         if(motions != nullptr)

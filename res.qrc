@@ -26,5 +26,88 @@
         <file alias="hurt_bullet">loops/hurt_bullet.png</file>
         <file alias="auto_bullet1">loops/auto_bullet1.png</file>
         <file alias="auto_bullet2">loops/auto_bullet2.png</file>
+        <file alias="1">loops/Transparent/creature_001.png</file>
+        <file alias="2">loops/Transparent/creature_002.png</file>
+        <file alias="3">loops/Transparent/creature_003.png</file>
+        <file alias="4">loops/Transparent/creature_004.png</file>
+        <file alias="5">loops/Transparent/creature_005.png</file>
+        <file alias="6">loops/Transparent/creature_006.png</file>
+        <file alias="7">loops/Transparent/creature_007.png</file>
+        <file alias="8">loops/Transparent/creature_008.png</file>
+        <file alias="9">loops/Transparent/creature_009.png</file>
+        <file alias="10">loops/Transparent/creature_010.png</file>
+        <file alias="11">loops/Transparent/creature_011.png</file>
+        <file alias="12">loops/Transparent/creature_012.png</file>
+        <file alias="13">loops/Transparent/creature_013.png</file>
+        <file alias="14">loops/Transparent/creature_014.png</file>
+        <file alias="15">loops/Transparent/creature_015.png</file>
+        <file alias="16">loops/Transparent/creature_016.png</file>
+        <file>loops/Transparent/creature_017.png</file>
+        <file>loops/Transparent/creature_018.png</file>
+        <file>loops/Transparent/creature_019.png</file>
+        <file>loops/Transparent/creature_020.png</file>
+        <file>loops/Transparent/creature_021.png</file>
+        <file>loops/Transparent/creature_022.png</file>
+        <file>loops/Transparent/creature_023.png</file>
+        <file>loops/Transparent/creature_024.png</file>
+        <file>loops/Transparent/creature_025.png</file>
+        <file>loops/Transparent/creature_026.png</file>
+        <file>loops/Transparent/creature_027.png</file>
+        <file>loops/Transparent/creature_028.png</file>
+        <file>loops/Transparent/creature_029.png</file>
+        <file>loops/Transparent/creature_030.png</file>
+        <file>loops/Transparent/creature_031.png</file>
+        <file>loops/Transparent/creature_032.png</file>
+        <file>loops/Transparent/creature_033.png</file>
+        <file>loops/Transparent/creature_034.png</file>
+        <file>loops/Transparent/creature_035.png</file>
+        <file>loops/Transparent/creature_036.png</file>
+        <file>loops/Transparent/creature_037.png</file>
+        <file>loops/Transparent/creature_038.png</file>
+        <file>loops/Transparent/creature_039.png</file>
+        <file>loops/Transparent/creature_040.png</file>
+        <file>loops/Transparent/creature_041.png</file>
+        <file>loops/Transparent/creature_042.png</file>
+        <file>loops/Transparent/creature_043.png</file>
+        <file>loops/Transparent/creature_044.png</file>
+        <file>loops/Transparent/creature_045.png</file>
+        <file>loops/Transparent/creature_046.png</file>
+        <file>loops/Transparent/creature_047.png</file>
+        <file>loops/Transparent/creature_048.png</file>
+        <file>loops/Transparent/creature_049.png</file>
+        <file>loops/Transparent/creature_050.png</file>
+        <file>loops/Transparent/creature_051.png</file>
+        <file>loops/Transparent/creature_052.png</file>
+        <file>loops/Transparent/creature_053.png</file>
+        <file>loops/Transparent/creature_054.png</file>
+        <file>loops/Transparent/creature_055.png</file>
+        <file>loops/Transparent/creature_056.png</file>
+        <file>loops/Transparent/creature_057.png</file>
+        <file>loops/Transparent/creature_058.png</file>
+        <file>loops/Transparent/creature_059.png</file>
+        <file>loops/Transparent/creature_060.png</file>
+        <file>loops/Transparent/creature_061.png</file>
+        <file>loops/Transparent/creature_062.png</file>
+        <file>loops/Transparent/creature_063.png</file>
+        <file>loops/Transparent/creature_064.png</file>
+        <file alias="ene1">loops/ene1.png</file>
+        <file alias="ene2">loops/ene2.png</file>
+        <file alias="ene3">loops/ene3.png</file>
+        <file alias="ene4">loops/ene4.png</file>
+        <file alias="issac">loops/issac.png</file>
+        <file alias="q1">loops/collectibles_001_thesadonion.png</file>
+        <file alias="q2">loops/collectibles_002_theinnereye.png</file>
+        <file alias="q3">loops/collectibles_038_tammyshead.png</file>
+        <file alias="q4">loops/collectibles_096_littlechad.png</file>
+        <file alias="q5">loops/collectibles_097_bookofsin.png</file>
+        <file alias="q6">loops/collectibles_100_littlesteve.png</file>
+        <file alias="q7">loops/collectibles_120_oddmushroomthin.png</file>
+        <file alias="q8">loops/collectibles_125_bobbybomb.png</file>
+        <file alias="q9">loops/collectibles_166_d20.png</file>
+        <file alias="q10">loops/collectibles_190_pyro.png</file>
+        <file alias="q11">loops/collectibles_222_antigravity.png</file>
+        <file alias="q12">loops/collectibles_300_aries.png</file>
+        <file alias="shoot">loops/music/shoot.wav</file>
+        <file alias="upgrade">loops/music/upgrade.wav</file>
     </qresource>
 </RCC>

@@ -2,7 +2,10 @@
 #include"globals.h"
 NormalProjectile::NormalProjectile(Projectile *parent)
     : Projectile{parent}
-{}
+{
+
+
+}
 
 void NormalProjectile::loadRes(const ProjectileConfig* res)
 {

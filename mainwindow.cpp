@@ -2,6 +2,7 @@
 #include "entity/card.h"
 #include "entity/dotenemy.h"
 #include "scene/hud.h"
+#include "ui_hud.h"
 #include "ui_mainwindow.h"
 #include<QPainter>
 #include<QTimer>
@@ -13,6 +14,7 @@
 #include<QGraphicsScene>
 #include<QGraphicsView>
 #include<QDialog>
+#include<QRandomGenerator>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -28,6 +30,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     Globals::instance()->window = this;
     setCentralWidget(view);
+    //setWindowFlags(Qt::FramelessWindowHint);
 
     //模拟帧
     timer->setInterval(17);
@@ -79,12 +82,20 @@ void MainWindow::update_world(){
 int k=0;
 
 void MainWindow::spawn(){
+    if(Globals::instance()->isWin){
+        return;
+    }
     k+=17;
     if(k<= 1000){
         return;
     }
     k=0;
     DotEnemy* dot = new DotEnemy();
+    dot->healthComponent->health += Globals::instance()->enemyHealth;
+    dot->healthComponent->attack += Globals::instance()->enemyAttack;
+    dot->motion->speed += Globals::instance()->enemySpeed;
+    int index = QRandomGenerator::global()->bounded(0,enemyCounnt+1);
+    dot->sprite->play(QString::number(index),index==0?4:2);
     connect(dot,&GameObject::died,this,[](){
         Globals::instance()->player->setMana(Globals::instance()->player->mana + 20);
     });
@@ -95,6 +106,11 @@ void MainWindow::spawn(){
 }
 
 void MainWindow::spawnCard(){
+    //qDebug()<<"卡牌序列："<<cardIndex;
+    if(cardIndex == 12 && !isBoss){
+        isBoss = true;
+        spawnBoss();
+    }
     if(cardIndex >= 12){
         return;
     }
@@ -125,3 +141,24 @@ MainWindow::~MainWindow()
     delete objects;
 }
 
+void MainWindow::spawnBoss(){
+    boss = new DotEnemy();
+    boss->healthComponent->health = 10000;
+    boss->healthComponent->attack += Globals::instance()->enemyAttack;
+    boss->healthComponent->touchArea = new QVector2D(160,160);
+    boss->motion->speed = 0;
+    boss->sprite->play("boss",3);
+    boss->position = QVector2D(Globals::centerPos.x() + 500,Globals::instance()->centerPos.y() - 150);
+    objects->append(boss);
+    enemys->append(boss);
+    boss->run();
+    Globals::instance()->hud->ui->bossBar->setVisible(true);
+    connect(boss->healthComponent,&HealthComponent::healthChanged,this,[](int health){
+        Globals::instance()->hud->ui->bossBar->setValue(health / 100.0);
+    });
+    connect(boss,&GameObject::died,this,[](){
+        Globals::instance()->hud->ui->bossBar->setVisible(false);
+        Globals::instance()->hud->ui->winLabel->setVisible(true);
+        Globals::instance()->isWin = true;
+    });
+}

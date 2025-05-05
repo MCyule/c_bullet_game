@@ -419,8 +419,10 @@ Makefile: ../../learn.pro D:/Qt6/6.8.2/mingw_64/mkspecs/win32-g++/qmake.conf D:/
 		D:/Qt6/6.8.2/mingw_64/mkspecs/features/yacc.prf \
 		D:/Qt6/6.8.2/mingw_64/mkspecs/features/lex.prf \
 		../../learn.pro \
+		D:/Qt6/6.8.2/mingw_64/lib/Qt6Multimedia.prl \
 		D:/Qt6/6.8.2/mingw_64/lib/Qt6Widgets.prl \
 		D:/Qt6/6.8.2/mingw_64/lib/Qt6Gui.prl \
+		D:/Qt6/6.8.2/mingw_64/lib/Qt6Network.prl \
 		D:/Qt6/6.8.2/mingw_64/lib/Qt6Core.prl \
 		D:/Qt6/6.8.2/mingw_64/lib/Qt6EntryPoint.prl \
 		D:/Qt6/6.8.2/mingw_64/mkspecs/features/build_pass.prf \
@@ -775,8 +777,10 @@ D:/Qt6/6.8.2/mingw_64/mkspecs/features/exceptions.prf:
 D:/Qt6/6.8.2/mingw_64/mkspecs/features/yacc.prf:
 D:/Qt6/6.8.2/mingw_64/mkspecs/features/lex.prf:
 ../../learn.pro:
+D:/Qt6/6.8.2/mingw_64/lib/Qt6Multimedia.prl:
 D:/Qt6/6.8.2/mingw_64/lib/Qt6Widgets.prl:
 D:/Qt6/6.8.2/mingw_64/lib/Qt6Gui.prl:
+D:/Qt6/6.8.2/mingw_64/lib/Qt6Network.prl:
 D:/Qt6/6.8.2/mingw_64/lib/Qt6Core.prl:
 D:/Qt6/6.8.2/mingw_64/lib/Qt6EntryPoint.prl:
 D:/Qt6/6.8.2/mingw_64/mkspecs/features/build_pass.prf:

@@ -45,10 +45,16 @@ public:
     //视图
     QGraphicsView *game_view;
     MainWindow *window;
+    HUD *hud;
     int level = 0;
-    int cards[13]{1,2,3,4,5,6,7,8,9,10,11,12,13};
-    void nextLevel();
+    int cards[12]{1,2,3,4,5,6,7,8,9,10,11};
     void upgrade(int);
+    int enemyHealth=0;
+    int enemyAttack=0;
+    int enemySpeed=0;
+    bool isWin = false;
+    QSoundEffect *music;
+
 signals:
     void playerLoaded(Player*);
 };
